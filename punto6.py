@@ -14,7 +14,7 @@ def main():
                 continue
 
             pesos = convertir_dolares_a_pesos(dolares, tasa_cambio)
-            print(f"{dolares} dólares equivalen a {pesos:,.2f} pesos.")
+            print(f"{dolares} dólares equivalen a {pesos:.2f} pesos.")
         except ValueError:
             print("Valor inválido. Por favor ingrese un número válido.")
             continue
