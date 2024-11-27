@@ -8,7 +8,7 @@ def main():
     print("conversión de dólares a pesos.")
     while continuar:
         try:
-            dolares = float(input("Ingrese la cantidad en dólares que desea convertir: "))
+            dolares = float(input("Ingrese la cantidad en dólares: "))
             if dolares < 0:
                 print("Por favor, ingrese un valor positivo.")
                 continue
