@@ -2,7 +2,7 @@ import os
 
 opcion = ""
 
-def importefila(opcion):
+def importe_fila(opcion):
     nombre_fila = f"punto{opcion}.py"
     if os.path.exists(nombre_fila):
         exec(open(nombre_fila).read())
@@ -13,4 +13,4 @@ while opcion != "salir":
     opcion = input("Elige un punto para ejecuar (1, 2, 3, 4, 5, 6, 7, 8, 9, 10 salir): ")
     if opcion == "salir":
         break
-    importefila(opcion)
+    importe_fila(opcion)

@@ -5,16 +5,16 @@ def main():
     tasa_cambio = 3934
     continuar = True
 
-    print("conversión de dólares a pesos.")
+    print("conversión de dolares a pesos.")
     while continuar:
         try:
-            dolares = float(input("Ingrese la cantidad en dólares: "))
+            dolares = float(input("Ingrese la cantidad en dolares: "))
             if dolares < 0:
                 print("Por favor, ingrese un valor positivo.")
                 continue
 
             pesos = convertir_dolares_a_pesos(dolares, tasa_cambio)
-            print(f"{dolares} dólares equivalen a {pesos:.2f} pesos.")
+            print(f"{dolares} dolares equivalen a {pesos:.2f} pesos.")
         except ValueError:
             print("Valor inválido. Por favor ingrese un número válido.")
             continue
